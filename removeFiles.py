@@ -53,7 +53,7 @@ def removeFile(path):
     else:
         print('Unable to delete the '+path)
 
-def getFileOrFolderTime():
+def getFileOrFolderTime(path):
     ctime = os.stat(path).st_ctime
     return ctime
 
